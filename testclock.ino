@@ -1,19 +1,17 @@
-/* C.O.D.E ~ Electric Bell
-* HEADER FILES DECLARATION
+//C.O.D.E ~ Electric Bell
 
 #include <LiquidCrystal.h>
 #include "Wire.h"
 #define DS1307_I2C_ADDRESS 0x68
 
-*/
-
 
 LiquidCrystal lcd(4,7,8,9,12,13);
-/* RELAY CIRCUIT DEFINITIONS */
 
-//int relay= 8; // black
-//int current_pin=9; //brown
+/* RELAY CIRCUIT DEFINITIONS */
 // Circuitry:- red --ground ,orange-- supply 
+
+int relay= 8; // black
+int current_pin=9; //brown
 
 /* Function for Type Conversions */ 
 byte decToBcd(byte val)
@@ -27,13 +25,13 @@ byte bcdToDec(byte val)
   }
 
  
-/*void stopDs1307()
+void stopDs1307()
 {
   Wire.beginTransmission(DS1307_I2C_ADDRESS);
   Wire.send(0);
   Wire.send(0x80);
   Wire.endTransmission();
-}*/
+}
 
 // FUNCTION TO SET DATA ...
 void setDateDs1307(byte second, // 0-59
@@ -128,7 +126,7 @@ void loop()
     Serial.print(" Day_of_week:");
     Serial.println(dayOfWeek, DEC);
  
-  /*  CONSTRAINTS */
+    /*  CONSTRAINTS */
  
     if((hour==8 && minute ==10 &&second >=10) && (hour==8 && minute ==10 &&second <=50))
     digitalWrite(14,HIGH);
@@ -156,4 +154,3 @@ void loop()
     digitalWrite(14,LOW);
     delay(1000);
   }
-/ ********************************************************************************** */ 
