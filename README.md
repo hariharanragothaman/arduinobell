@@ -2,9 +2,13 @@
 
 **Automated school bell system powered by Arduino and a DS1307 real-time clock.**
 
-Arduino C++ PlatformIO License GitHub Actions
+![Arduino](https://img.shields.io/badge/Arduino-Uno-00979D?logo=arduino&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-11-00599C?logo=cplusplus&logoColor=white)
+![PlatformIO](https://img.shields.io/badge/PlatformIO-Build-FF7F00?logo=platformio&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![CI](https://img.shields.io/github/actions/workflow/status/hariharanragothaman/arduinobell/ci.yml?label=CI&logo=githubactions&logoColor=white)
 
-Features • How It Works • Circuit Diagram • Bell Schedule • Quick Start • Configuration • Project Layout • Testing • Contributing • License
+[Features](#features) • [How It Works](#how-it-works) • [Circuit Diagram](#circuit-diagram) • [Bell Schedule](#bell-schedule) • [Quick Start](#quick-start) • [Configuration](#configuration) • [Project Layout](#project-layout) • [Testing](#testing) • [Contributing](#contributing) • [License](#license)
 
 ---
 
