@@ -1,12 +1,28 @@
-*.class
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Build artifacts
+build/
+*.o
+*.elf
+*.hex
+*.bin
+*.map
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# OS files
+.DS_Store
+Thumbs.db
+
+# Arduino IDE
+*.ino.eep
+*.ino.elf
+*.ino.hex
